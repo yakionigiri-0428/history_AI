@@ -2,113 +2,82 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>歴史特化型AIチャット</title>
+  <title>オリジナル歴史チャット</title>
   <style>
     body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 10px; }
-    #chat-box { border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; }
-    .user { color: blue; text-align: right; margin: 5px 0; }
-    .ai { color: green; text-align: left; margin: 5px 0; }
-    input[type="text"] { width: 70%; padding: 8px; }
-    button { padding: 8px 15px; }
+    #chat-box { border: 1px solid #ccc; height: 350px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; background: #f9f9f9; }
+    .user { color: #333; text-align: right; margin: 10px 0; }
+    .user span { background: #d1e7dd; padding: 8px 12px; border-radius: 15px; display: inline-block; }
+    .bot { color: #333; text-align: left; margin: 10px 0; }
+    .bot span { background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 15px; display: inline-block; }
+    input[type="text"] { width: 75%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
   </style>
 </head>
 <body>
 
-  <h2>歴史特化型AIアシスタント</h2>
-  
-  <!-- APIキー入力欄（安全のため、ユーザー側で入力する仕様にしています） -->
-  <div>
-    <label>Gemini API Key: </label>
-    <input type="password" id="apiKey" placeholder="APIキーを入力">
-  </div>
-  <br>
-
+  <h2>オリジナル歴史アシスタント</h2>
   <div id="chat-box"></div>
 
-  <input type="text" id="userInput" placeholder="歴史について質問してください...">
+  <input type="text" id="userInput" placeholder="歴史について質問してください（例：江戸幕府）" onkeypress="if(event.key === 'Enter') sendMessage()">
   <button onclick="sendMessage()">送信</button>
 
   <script>
     let historyData = [];
 
-    // 1. GitHub上に置いた歴史データ(data.json)を読み込む
+    // 起動時にデータを読み込む
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
         historyData = data;
-        console.log("歴史データを読み込みました:", historyData);
+        addMessage("bot", "歴史データを読み込みました。何でも質問してください！");
       })
-      .catch(err => console.error("データの読み込みエラー:", err));
+      .catch(err => {
+        addMessage("bot", "エラー：データの読み込みに失敗しました。");
+      });
 
-    // 2. 質問に関連する歴史データを検索する簡易関数
-    function findRelevantContext(query) {
-      // 質問に含まれるキーワードが含まれるデータを抽出
-      const matches = historyData.filter(item => 
-        query.includes(item.title) || item.content.split('').some(char => query.includes(char))
-      );
-      
-      // 該当データがあれば結合、無ければ全データをコンテキストとして使用（データ量が少ない場合）
-      if (matches.length > 0) {
-        return matches.map(m => `${m.title}: ${m.content}`).join("\n");
-      }
-      return historyData.map(m => `${m.title}: ${m.content}`).join("\n");
+    // メッセージを画面に追加する関数
+    function addMessage(sender, text) {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML += `<div class="${sender}"><span>${text}</span></div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    // 3. AI（Gemini API）への送信と回答取得
-    async function sendMessage() {
-      const apiKey = document.getElementById('apiKey').value;
+    // 質問を送信して回答を探す関数
+    function sendMessage() {
       const inputField = document.getElementById('userInput');
       const userText = inputField.value.trim();
-      const chatBox = document.getElementById('chat-box');
-
-      if (!apiKey) {
-        alert("APIキーを入力してください");
-        return;
-      }
       if (!userText) return;
 
-      // 画面にユーザーの質問を表示
-      chatBox.innerHTML += `<div class="user"><b>あなた:</b> ${userText}</div>`;
+      addMessage("user", userText);
       inputField.value = '';
 
-      // 質問に関連するナレッジを抽出
-      const context = findRelevantContext(userText);
+      // 一致するキーワードが最も多いデータを探す
+      let bestMatch = null;
+      let maxScore = 0;
 
-      // AIに対する役割固定プロンプト（システム指示）
-      const systemInstruction = `
-あなたは歴史専門のAIアシスタントです。
-以下の【提供された歴史情報】のみに基づいて回答してください。
-提供された情報に記載がない質問には「その歴史情報についてはデータに含まれていません」と答えてください。
-
-【提供された歴史情報】:
-${context}
-`;
-
-      try {
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{
-              parts: [
-                { text: systemInstruction },
-                { text: `質問: ${userText}` }
-              ]
-            }]
-          })
-        });
-
-        const data = await response.json();
-        const aiReply = data.candidates[0].content.parts[0].text;
-
-        // 画面にAIの回答を表示
-        chatBox.innerHTML += `<div class="ai"><b>歴史AI:</b> ${aiReply}</div>`;
-        chatBox.scrollTop = chatBox.scrollHeight;
-
-      } catch (error) {
-        console.error(error);
-        chatBox.innerHTML += `<div class="ai" style="color:red;">エラーが発生しました。APIキーまたは接続を確認してください。</div>`;
+      for (const item of historyData) {
+        let score = 0;
+        for (const keyword of item.keywords) {
+          if (userText.includes(keyword)) {
+            score++;
+          }
+        }
+        // スコアが一番高いものを記録
+        if (score > 0 && score > maxScore) {
+          maxScore = score;
+          bestMatch = item;
+        }
       }
+
+      // 回答を表示する（見つからなかった場合のメッセージも指定）
+      setTimeout(() => {
+        if (bestMatch) {
+          addMessage("bot", `<b>【${bestMatch.title}】</b><br>${bestMatch.content}`);
+        } else {
+          addMessage("bot", "その歴史情報については、まだ学習していません。");
+        }
+      }, 500); // 0.5秒遅らせて「考えている感」を出す
     }
   </script>
 </body>
