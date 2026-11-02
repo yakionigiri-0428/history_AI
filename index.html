@@ -19,7 +19,7 @@
   <h2>オリジナル歴史アシスタント</h2>
   <div id="chat-box"></div>
 
-  <input type="text" id="userInput" placeholder="歴史について質問してください（例：江戸幕府）" onkeypress="if(event.key === 'Enter') sendMessage()">
+  <input type="text" id="userInput" placeholder="キーワードを入力（例：応仁の乱、足利義満）" onkeypress="if(event.key === 'Enter') sendMessage()">
   <button onclick="sendMessage()">送信</button>
 
   <script>
@@ -30,20 +30,18 @@
       .then(response => response.json())
       .then(data => {
         historyData = data;
-        addMessage("bot", "歴史データを読み込みました。何でも質問してください！");
+        addMessage("bot", "歴史データを読み込みました。質問やキーワードを入力してください！");
       })
       .catch(err => {
         addMessage("bot", "エラー：データの読み込みに失敗しました。");
       });
 
-    // メッセージを画面に追加する関数
     function addMessage(sender, text) {
       const chatBox = document.getElementById('chat-box');
       chatBox.innerHTML += `<div class="${sender}"><span>${text}</span></div>`;
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    // 質問を送信して回答を探す関数
     function sendMessage() {
       const inputField = document.getElementById('userInput');
       const userText = inputField.value.trim();
@@ -52,32 +50,28 @@
       addMessage("user", userText);
       inputField.value = '';
 
-      // 一致するキーワードが最も多いデータを探す
-      let bestMatch = null;
-      let maxScore = 0;
+      let matchedItems = [];
 
+      // ユーザーの入力した文字が、キーワードの「一部」に含まれていればヒットとする
       for (const item of historyData) {
-        let score = 0;
-        for (const keyword of item.keywords) {
-          if (userText.includes(keyword)) {
-            score++;
-          }
-        }
-        // スコアが一番高いものを記録
-        if (score > 0 && score > maxScore) {
-          maxScore = score;
-          bestMatch = item;
+        let isMatch = item.keywords.some(keyword => userText.includes(keyword) || keyword.includes(userText));
+        if (isMatch) {
+          matchedItems.push(item);
         }
       }
 
-      // 回答を表示する（見つからなかった場合のメッセージも指定）
       setTimeout(() => {
-        if (bestMatch) {
-          addMessage("bot", `<b>【${bestMatch.title}】</b><br>${bestMatch.content}`);
+        if (matchedItems.length > 0) {
+          // ヒットしたものをすべて（または最初のものを）表示
+          let replyHTML = "";
+          matchedItems.forEach(item => {
+            replyHTML += `<b>【${item.title}】</b><br>${item.content}<br><br>`;
+          });
+          addMessage("bot", replyHTML.trim());
         } else {
-          addMessage("bot", "その歴史情報については、まだ学習していません。");
+          addMessage("bot", "その歴史情報については、まだ学習していません。<br>（例：「応仁の乱」「足利義満」などの言葉で検索してみてください）");
         }
-      }, 500); // 0.5秒遅らせて「考えている感」を出す
+      }, 500);
     }
   </script>
 </body>
