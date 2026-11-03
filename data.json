@@ -1,19 +1,5 @@
 [
   {
-    "keywords": ["足利義満", "あしかがよしみつ", "義満", "よしみつ", "第3代", "南北朝", "日本国王"],
-    "title": "<ruby>足利義満<rt>あしかがよしみつ</rt></ruby>",
-    "content": "室町幕府第3代将軍であり、南北朝の合体を実現し、明から「日本国王」の称号を得て日明貿易を開始しました。"
-  },
-  {
-    "keywords": ["応仁の乱", "おうにんのらん", "1467", "細川勝元", "山名持豊", "山名宗全", "京都"],
-    "title": "<ruby>応仁<rt>おうにん</rt></ruby>の<ruby>乱<rt>らん</rt></ruby>",
-    "content": "1467年に京都で発生し、<ruby>細川勝元<rt>ほそかわかつもと</rt></ruby>と<ruby>山名持豊<rt>やまなもちとよ</rt></ruby>（<ruby>宗全<rt>そうぜん</rt></ruby>）の対立から全国の戦国時代への引き金となった大乱です。"
-  },
-  {
-    "keywords": ["雪舟", "せっしゅう", "水墨画", "すいぼくが", "明"],
-    "title": "<ruby>雪舟<rt>せっしゅう</rt></ruby>と<ruby>水墨画<rt>すいぼくが</rt></ruby>",
-    "content": "明に渡って作画技術を学び、日本の独自の水墨画様式を創造した代表的な画僧です。"[
-  {
     "keywords": ["三管領", "さんかんれい", "最高職", "さいこうしょく", "細川", "ほそかわ", "斯波", "しば", "畠山", "はたけやま"],
     "title": "<ruby>三管領<rt>さんかんれい</rt></ruby>の組み合わせ",
     "content": "<ruby>室町幕府<rt>むろまちばくふ</rt></ruby>において、<ruby>将軍<rt>しょうぐん</rt></ruby>に次ぐ<ruby>最高職<rt>さいこうしょく</rt></ruby>として<ruby>幕政<rt>ばくせい</rt></ruby>を<ruby>統括<rt>とうかつ</rt></ruby>した「<ruby>三管領<rt>さんかんれい</rt></ruby>」は、<ruby>細川氏<rt>ほそかわし</rt></ruby>・<ruby>斯波氏<rt>しばし</rt></ruby>・<ruby>畠山氏<rt>はたけやまし</rt></ruby>の3家です。"
@@ -116,7 +102,7 @@
   {
     "keywords": ["東山文化", "ひがしやまぶんか", "足利義政", "あしかがよしまさ", "東山山荘", "ひがしやまさんそう", "侘び", "わび", "幽玄", "ゆうげん"],
     "title": "<ruby>東山文化<rt>ひがしやまぶんか</rt></ruby>",
-    "<ruby>足利義政<rt>あしかがよしまさ</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>の<ruby>東山山荘<rt>ひがしやまさんそう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>開花<rt>かいか</rt></ruby>し、<ruby>簡素<rt>かんそ</rt></ruby>さと<ruby>幽玄<rt>ゆうげん</rt></ruby>・<ruby>侘び<rt>わび</rt></ruby>を<ruby>基調<rt>きちょう</rt></ruby>とした<ruby>文化<rt>ぶんか</rt></ruby>です。"
+    "content": "<ruby>足利義政<rt>あしかがよしまさ</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>の<ruby>東山山荘<rt>ひがしやまさんそう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>開花<rt>かいか</rt></ruby>し、<ruby>簡素<rt>かんそ</rt></ruby>さと<ruby>幽玄<rt>ゆうげん</rt></ruby>・<ruby>侘び<rt>わび</rt></ruby>を<ruby>基調<rt>きちょう</rt></ruby>とした<ruby>文化<rt>ぶんか</rt></ruby>です。"
   },
   {
     "keywords": ["能", "のう", "能楽", "のうがく", "観阿弥", "かんあみ", "世阿弥", "ぜあみ"],
@@ -142,7 +128,5 @@
     "keywords": ["惣掟", "そうおきて", "規約", "きやく", "惣村", "そうそん"],
     "title": "<ruby>惣掟<rt>そうおきて</rt></ruby>",
     "content": "<ruby>惣村<rt>そうそん</rt></ruby>において、<ruby>村<rt>むら</rt></ruby>の<ruby>秩序<rt>ちつじょ</rt></ruby>や<ruby>農作業<rt>のうさぎょう</rt></ruby>・<ruby>用水管理<rt>ようすいかんり</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>するために<ruby>農民<rt>のうみん</rt></ruby>たちが<ruby>自主的<rt>じしゅてき</rt></ruby>に定めた<ruby>規約<rt>きやく</rt></ruby>のことです。"
-  }
-]
   }
 ]
