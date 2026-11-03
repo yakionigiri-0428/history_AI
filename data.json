@@ -12,6 +12,137 @@
   {
     "keywords": ["雪舟", "せっしゅう", "水墨画", "すいぼくが", "明"],
     "title": "<ruby>雪舟<rt>せっしゅう</rt></ruby>と<ruby>水墨画<rt>すいぼくが</rt></ruby>",
-    "content": "明に渡って作画技術を学び、日本の独自の水墨画様式を創造した代表的な画僧です。"
+    "content": "明に渡って作画技術を学び、日本の独自の水墨画様式を創造した代表的な画僧です。"[
+  {
+    "keywords": ["三管領", "さんかんれい", "最高職", "さいこうしょく", "細川", "ほそかわ", "斯波", "しば", "畠山", "はたけやま"],
+    "title": "<ruby>三管領<rt>さんかんれい</rt></ruby>の組み合わせ",
+    "content": "<ruby>室町幕府<rt>むろまちばくふ</rt></ruby>において、<ruby>将軍<rt>しょうぐん</rt></ruby>に次ぐ<ruby>最高職<rt>さいこうしょく</rt></ruby>として<ruby>幕政<rt>ばくせい</rt></ruby>を<ruby>統括<rt>とうかつ</rt></ruby>した「<ruby>三管領<rt>さんかんれい</rt></ruby>」は、<ruby>細川氏<rt>ほそかわし</rt></ruby>・<ruby>斯波氏<rt>しばし</rt></ruby>・<ruby>畠山氏<rt>はたけやまし</rt></ruby>の3家です。"
+  },
+  {
+    "keywords": ["応仁の乱", "おうにんのらん", "1467", "細川勝元", "ほそかわかつもと", "山名持豊", "やまなもちとよ", "山名宗全", "やまなそうぜん", "京都", "きょうと"],
+    "title": "<ruby>応仁<rt>おうにん</rt></ruby>の<ruby>乱<rt>らん</rt></ruby>",
+    "content": "1467年に<ruby>京都<rt>きょうと</rt></ruby>で<ruby>発生<rt>はっせい</rt></ruby>し、<ruby>細川勝元<rt>ほそかわかつもと</rt></ruby>と<ruby>山名持豊<rt>やまなもちとよ</rt></ruby>（<ruby>宗全<rt>そうぜん</rt></ruby>）の<ruby>対立<rt>たいりつ</rt></ruby>から<ruby>全国<rt>ぜんこく</rt></ruby>の<ruby>戦国時代<rt>せんごくじだい</rt></ruby>への引き金となった<ruby>大乱<rt>たいらん</rt></ruby>です。"
+  },
+  {
+    "keywords": ["山城の国一揆", "やましろのくにいっき", "1485", "南山城", "みなみやましろ", "畠山", "はたけやま"],
+    "title": "<ruby>山城<rt>やましろ</rt></ruby>の<ruby>国一揆<rt>くにいっき</rt></ruby>",
+    "content": "1485年、<ruby>南山城<rt>みなみやましろ</rt></ruby><ruby>地方<rt>ちほう</rt></ruby>の<ruby>国人<rt>こくじん</rt></ruby>や<ruby>農民<rt>のうみん</rt></ruby>が<ruby>結集<rt>けっしゅう</rt></ruby>し、<ruby>畠山氏<rt>はたけやまし</rt></ruby>の両派の<ruby>軍勢<rt>ぐんぜい</rt></ruby>を<ruby>退去<rt>たいきょ</rt></ruby>させて8年間の<ruby>自治<rt>じち</rt></ruby>を行った<ruby>出来事<rt>できごと</rt></ruby>です。"
+  },
+  {
+    "keywords": ["加賀の一向一揆", "かがのいっこういっき", "1488", "本願寺", "ほんがんじ", "富樫", "とがし"],
+    "title": "<ruby>加賀<rt>かが</rt></ruby>の<ruby>一向一揆<rt>いっこういっき</rt></ruby>",
+    "content": "1488年、<ruby>本願寺派<rt>ほんがんじは</rt></ruby>の<ruby>門徒<rt>みると</rt></ruby>が<ruby>国人<rt>こくじん</rt></ruby>と手を結んで<ruby>守護<rt>しゅご</rt></ruby>の<ruby>富樫氏<rt>とがしし</rt></ruby>を倒し、以後約1世紀にわたって<ruby>自治<rt>じち</rt></ruby>を行いました。"
+  },
+  {
+    "keywords": ["琉球", "りゅうきゅう", "琉球王国", "りゅうきゅうおうこく", "1429", "尚巴志", "しょうはし", "三山", "さんざん"],
+    "title": "<ruby>琉球王国<rt>りゅうきゅうおうこく</rt></ruby>",
+    "content": "1429年に<ruby>尚巴志<rt>しょうはし</rt></ruby>が<ruby>三山<rt>さんざん</rt></ruby>（<ruby>山北<rt>さんほく</rt></ruby>・<ruby>中山<rt>ちゅうざん</rt></ruby>・<ruby>山南<rt>さんなん</rt></ruby>）を<ruby>統一<rt>とういつ</rt></ruby>して建て、<ruby>中継貿易<rt>ちゅうけいぼうえき</rt></ruby>で栄えた<ruby>王国<rt>おうこく</rt></ruby>です。"
+  },
+  {
+    "keywords": ["雪舟", "せっしゅう", "水墨画", "すいぼくが", "明", "みん"],
+    "title": "<ruby>雪舟<rt>せっしゅう</rt></ruby>と<ruby>水墨画<rt>すいぼくが</rt></ruby>",
+    "content": "<ruby>明<rt>みん</rt></ruby>に渡って<ruby>作画技術<rt>さくがぎじゅつ</rt></ruby>を学び、日本の<ruby>独自<rt>どくじ</rt></ruby>の<ruby>水墨画様式<rt>すいぼくがようしき</rt></ruby>を<ruby>創造<rt>そうぞう</rt></ruby>した<ruby>代表的<rt>だいひょうてき</rt></ruby>な<ruby>画僧<rt>がそう</rt></ruby>です。"
+  },
+  {
+    "keywords": ["寧波の乱", "にんぽうのらん", "ねいはのらん", "1523", "寧波", "にんぽう", "大内", "おおうち", "細川", "ほそかわ"],
+    "title": "<ruby>寧波<rt>にんぽう</rt></ruby>の<ruby>乱<rt>らん</rt></ruby>",
+    "content": "1523年、<ruby>明<rt>みん</rt></ruby>の<ruby>寧波港<rt>にんぽうこう</rt></ruby>で日本の<ruby>細川氏<rt>ほそかわし</rt></ruby>と<ruby>大内氏<rt>おおうちし</rt></ruby>の<ruby>勘合貿易<rt>かんごうぼうえき</rt></ruby>をめぐる<ruby>利権争い<rt>りけんあらそい</rt></ruby>が<ruby>激化<rt>げきか</rt></ruby>し<ruby>衝突<rt>しょうとつ</rt></ruby>した<ruby>事件<rt>じけん</rt></ruby>です。"
+  },
+  {
+    "keywords": ["足利義満", "あしかがよしみつ", "義満", "よしみつ", "第3代", "だいさんだい", "南北朝", "なんぼくちょう", "日本国王", "にほんこくおう"],
+    "title": "<ruby>足利義満<rt>あしかがよしみつ</rt></ruby>",
+    "content": "<ruby>室町幕府<rt>むろまちばくふ</rt></ruby><ruby>第3代将軍<rt>だいさんだいしょうぐん</rt></ruby>であり、<ruby>南北朝<rt>なんぼくちょう</rt></ruby>の<ruby>合体<rt>がったい</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>し、<ruby>明<rt>みん</rt></ruby>から「<ruby>日本国王<rt>にほんこくおう</rt></ruby>」の<ruby>称号<rt>しょうごう</rt></ruby>を得て<ruby>日明貿易<rt>にちみんぼうえき</rt></ruby>を<ruby>開始<rt>かいし</rt></ruby>しました。"
+  },
+  {
+    "keywords": ["勘合", "かんごう", "勘合符", "かんごうふ", "日明貿易", "にちみんぼうえき", "査証", "さしょう", "証票", "しょうひょう"],
+    "title": "<ruby>勘合<rt>かんごう</rt></ruby>（<ruby>勘合符<rt>かんごうふ</rt></ruby>）",
+    "content": "<ruby>日明貿易<rt>にちみんぼうえき</rt></ruby>において、<ruby>正規<rt>せいき</rt></ruby>の<ruby>貿易船<rt>ぼうえきせん</rt></ruby>であることを<ruby>証明<rt>しょうめい</rt></ruby>するために用いられた<ruby>査証<rt>さしょう</rt></ruby>（<ruby>証票<rt>しょうひょう</rt></ruby>）です。"
+  },
+  {
+    "keywords": ["倭寇", "わこう", "海賊", "かいぞく", "朝鮮", "ちょうせん", "略奪", "りゃくだつ"],
+    "title": "<ruby>倭寇<rt>わこう</rt></ruby>",
+    "content": "<ruby>朝鮮半島<rt>ちょうせんはんとう</rt></ruby>や中国<ruby>沿岸<rt>えんがん</rt></ruby>を襲い、<ruby>捕虜<rt>ほりょ</rt></ruby>の<ruby>連行<rt>れんこう</rt></ruby>や<ruby>食料<rt>しょくりょう</rt></ruby>の<ruby>略奪<rt>りゃくだつ</rt></ruby>を行った<ruby>海賊集団<rt>かいぞくしゅうだん</rt></ruby>です。"
+  },
+  {
+    "keywords": ["惣", "そう", "惣村", "そうそん", "自治", "じち", "村落", "そんらく"],
+    "title": "<ruby>惣<rt>そう</rt></ruby>（<ruby>惣村<rt>そうそん</rt></ruby>）",
+    "content": "<ruby>鎌倉時代<rt>かまくらじだい</rt></ruby><ruby>後期<rt>こうき</rt></ruby>から<ruby>近畿地方<rt>きんきちほう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>形成<rt>けいせい</rt></ruby>された、<ruby>農民<rt>のうみん</rt></ruby>が<ruby>自警<rt>じけい</rt></ruby>や<ruby>農作業<rt>のうさぎょう</rt></ruby>のために<ruby>自治的<rt>じちてき</rt></ruby>・<ruby>集団的<rt>しゅうだんてき</rt></ruby>に作った<ruby>村落組織<rt>そんらくそしき</rt></ruby>です。"
+  },
+  {
+    "keywords": ["正長の土一揆", "しょうちょうのつちいっき", "1428", "徳政", "とくせい", "馬借", "ばしゃく", "土倉", "どそう"],
+    "title": "<ruby>正長<rt>しょうちょう</rt></ruby>の<ruby>土一揆<rt>つちいっき</rt></ruby>",
+    "content": "1428年、<ruby>近畿地方<rt>きんきちほう</rt></ruby>の<ruby>農民<rt>のうみん</rt></ruby>や<ruby>馬借<rt>ばしゃく</rt></ruby>らが<ruby>徳政<rt>とくせい</rt></ruby>を求めて<ruby>蜂起<rt>ほうき</rt></ruby>し、<ruby>土倉<rt>どそう</rt></ruby>や<ruby>酒屋<rt>さかや</rt></ruby>を<ruby>襲撃<rt>しゅうげき</rt></ruby>して<ruby>借文<rt>しゃくもん</rt></ruby>を<ruby>破棄<rt>はき</rt></ruby>させた最初の<ruby>土一揆<rt>つちいっき</rt></ruby>です。"
+  },
+  {
+    "keywords": ["会合衆", "えごうしゅう", "かいごうしゅう", "堺", "さかい", "豪商", "ごうしょう", "36人", "さんじゅうろくにん"],
+    "title": "<ruby>会合衆<rt>えごうしゅう</rt></ruby>",
+    "content": "<ruby>自由<rt>じゆう</rt></ruby>な<ruby>自治都市<rt>じちとし</rt></ruby>として栄えた「<ruby>堺<rt>さかい</rt></ruby>」において、36人の<ruby>豪商<rt>ごうしょう</rt></ruby>による<ruby>合議制<rt>ごうぎせい</rt></ruby>で<ruby>市政<rt>しせい</rt></ruby>を<ruby>運営<rt>うんえい</rt></ruby>した<ruby>組織<rt>そしき</rt></ruby>です。"
+  },
+  {
+    "keywords": ["寺内町", "じないちょう", "じないまち", "浄土真宗", "じょうどしんしゅう", "門徒", "みると", "堀", "ほり"],
+    "title": "<ruby>寺内町<rt>じないちょう</rt></ruby>",
+    "content": "<ruby>浄土真宗<rt>じょうどしんしゅう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby>や<ruby>道場<rt>どうじょう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>門徒<rt>みると</rt></ruby>の<ruby>商工業者<rt>しょうこうぎょうしゃ</rt></ruby>が集まり、<ruby>周囲<rt>しゅうい</rt></ruby>に<ruby>堀<rt>ほり</rt></ruby>や<ruby>土塁<rt>どるい</rt></ruby>を<ruby>巡<rt>めぐ</rt></ruby>らせて<ruby>防衛機能<rt>ぼうえいきのう</rt></ruby>を高めた<ruby>自治都市<rt>じちとし</rt></ruby>です。"
+  },
+  {
+    "keywords": ["撰銭", "えりぜに", "私鋳銭", "しちゅうせん", "悪銭", "あくせん", "明銭", "みんせん"],
+    "title": "<ruby>撰銭<rt>えりぜに</rt></ruby>",
+    "content": "<ruby>明銭<rt>みんせん</rt></ruby>などの<ruby>輸入銭貨<rt>ゆにゅうせんか</rt></ruby>に混じって<ruby>粗悪<rt>そあく</rt></ruby>な「<ruby>私鋳銭<rt>しちゅうせん</rt></ruby>」が<ruby>流通<rt>りゅうつう</rt></ruby>した際、<ruby>悪銭<rt>あくせん</rt></ruby>を嫌い<ruby>良質銭<rt>りょうしつせん</rt></ruby>を選び取ろうとした<ruby>行為<rt>こうい</rt></ruby>です。"
+  },
+  {
+    "keywords": ["六斎市", "ろくさいいち", "定期", "ていき", "6回", "ろっかい", "市場", "いちば"],
+    "title": "<ruby>六斎市<rt>ろくさいいち</rt></ruby>",
+    "content": "<ruby>室町時代<rt>むろまちばくふ</rt></ruby>に月に6回<ruby>定期的に<rt>ていきてきに</rt></ruby>開かれるようになり、<ruby>流通<rt>りゅうつう</rt></ruby>の<ruby>発展<rt>はってん</rt></ruby>を<ruby>象徴<rt>しょうちょう</rt></ruby>した<ruby>市場<rt>いちば</rt></ruby>です。"
+  },
+  {
+    "keywords": ["三毛作", "さんもうさく", "農法", "のうほう", "二毛作", "にもうさく"],
+    "title": "<ruby>三毛作<rt>さんもうさく</rt></ruby>",
+    "content": "<ruby>室町時代<rt>むろまちじだい</rt></ruby>の<ruby>農業技術<rt>のうぎょうぎじゅつ</rt></ruby>の<ruby>発達<rt>はったつ</rt></ruby>において、<ruby>従来<rt>じゅうらい</rt></ruby>の<ruby>二毛作<rt>にもうさく</rt></ruby>に<ruby>加<rt>くわ</rt></ruby>え、一部の<ruby>畿内<rt>きない</rt></ruby>などで<ruby>開始<rt>かいし</rt></ruby>された<ruby>農法<rt>のうほう</rt></ruby>です。"
+  },
+  {
+    "keywords": ["関所", "せきしょ", "関銭", "せきせん", "津料", "つりょう", "通行料", "つうこうりょう"],
+    "title": "<ruby>関所<rt>せきしょ</rt></ruby>",
+    "content": "<ruby>京都<rt>きょうと</rt></ruby>などの<ruby>主要<rt>しゅよう</rt></ruby>な<ruby>交通<rt>こうつう</rt></ruby>の<ruby>要所<rt>ようしょ</rt></ruby>に<ruby>設置<rt>せっち</rt></ruby>され、<ruby>通行料<rt>つうこうりょう</rt></ruby>（<ruby>関銭<rt>せきせん</rt></ruby>・<ruby>津料<rt>つりょう</rt></ruby>）を<ruby>徴収<rt>ちょうしゅう</rt></ruby>した<ruby>施設<rt>しせつ</rt></ruby>です。"
+  },
+  {
+    "keywords": ["書院造", "しょいんづくり", "障子", "しょうじ", "畳", "たたみ", "付書院", "つけしょいん", "違い棚", "ちがいだな"],
+    "title": "<ruby>書院造<rt>しょいんづくり</rt></ruby>",
+    "content": "<ruby>室町時代<rt>むろまちじだい</rt></ruby>の<ruby>建築様式<rt>けんちくようしき</rt></ruby>で、<ruby>障子<rt>しょうじ</rt></ruby>や<ruby>畳<rt>たたみ</rt></ruby>、<ruby>付書院<rt>つけしょいん</rt></ruby>や<ruby>違い棚<rt>ちがいだな</rt></ruby>を配し、<ruby>現代<rt>げんだい</rt></ruby>の<ruby>和風住宅<rt>わふうじゅうたく</rt></ruby>の<ruby>原型<rt>げんけい</rt></ruby>となった<ruby>様式<rt>ようしき</rt></ruby>です。"
+  },
+  {
+    "keywords": ["枯山水", "かれさんすい", "庭園", "ていえん", "岩石", "がんせき", "砂利", "じゃり", "禅宗", "ぜんしゅう"],
+    "title": "<ruby>枯山水<rt>かれさんすい</rt></ruby>",
+    "content": "水を用いず、<ruby>岩石<rt>がんせき</rt></ruby>と<ruby>砂利<rt>じゃり</rt></ruby>を組み合わせて<ruby>象徴的<rt>しょうちょうてき</rt></ruby>な<ruby>自然風景<rt>しぜんふうけい</rt></ruby>を<ruby>表現<rt>ひょうげん</rt></ruby>した<ruby>禅宗寺院<rt>ぜんしゅうじいん</rt></ruby>の<ruby>庭園様式<rt>ていえんようしき</rt></ruby>です。"
+  },
+  {
+    "keywords": ["東山文化", "ひがしやまぶんか", "足利義政", "あしかがよしまさ", "東山山荘", "ひがしやまさんそう", "侘び", "わび", "幽玄", "ゆうげん"],
+    "title": "<ruby>東山文化<rt>ひがしやまぶんか</rt></ruby>",
+    "<ruby>足利義政<rt>あしかがよしまさ</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>の<ruby>東山山荘<rt>ひがしやまさんそう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>開花<rt>かいか</rt></ruby>し、<ruby>簡素<rt>かんそ</rt></ruby>さと<ruby>幽玄<rt>ゆうげん</rt></ruby>・<ruby>侘び<rt>わび</rt></ruby>を<ruby>基調<rt>きちょう</rt></ruby>とした<ruby>文化<rt>ぶんか</rt></ruby>です。"
+  },
+  {
+    "keywords": ["能", "のう", "能楽", "のうがく", "観阿弥", "かんあみ", "世阿弥", "ぜあみ"],
+    "title": "<ruby>能<rt>のう</rt></ruby>（<ruby>能楽<rt>のうがく</rt></ruby>）",
+    "content": "<ruby>室町時代<rt>むろまちじだい</rt></ruby>に<ruby>観阿弥<rt>かんあみ</rt></ruby>・<ruby>世阿弥<rt>ぜあみ</rt></ruby>の<ruby>親子<rt>おやこ</rt></ruby>が<ruby>足利義満<rt>あしかがよしみつ</rt></ruby>の<ruby>保護<rt>ほご</rt></ruby>を受けて<ruby>大成<rt>たいせい</rt></ruby>させた、<ruby>歌舞<rt>かぶ</rt></ruby>・<ruby>演劇<rt>えんげき</rt></ruby>の<ruby>芸能<rt>げいのう</rt></ruby>です。"
+  },
+  {
+    "keywords": ["下剋上", "げこくじょう", "下克上", "戦国時代", "せんごくじだい"],
+    "title": "<ruby>下剋上<rt>げこくじょう</rt></ruby>",
+    "content": "<ruby>身分<rt>みぶん</rt></ruby>の低い者が上の者を<ruby>実力<rt>じつりょく</rt></ruby>で倒して取って代わる、<ruby>戦国時代<rt>せんごくじだい</rt></ruby>の<ruby>社会風潮<rt>しゃかいふうちょう</rt></ruby>・<ruby>現象<rt>げんしょう</rt></ruby>のことです。"
+  },
+  {
+    "keywords": ["楽市・楽座", "らくいちらくざ", "楽市楽座", "城下町", "じょうかまち", "座", "ざ"],
+    "title": "<ruby>楽市<rt>らくいち</rt></ruby>・<ruby>楽座<rt>らくざ</rt></ruby>",
+    "content": "<ruby>独占販売権<rt>どくせんはんばいけん</rt></ruby>を持つ「<ruby>座<rt>ざ</rt></ruby>」の<ruby>特権<rt>とっけん</rt></ruby>を<ruby>解消<rt>かいしょう</rt></ruby>し、<ruby>関所<rt>せきしょ</rt></ruby>などを<ruby>廃止<rt>はいし</rt></ruby>して<ruby>自由<rt>じゆう</rt></ruby>な<ruby>取引<rt>とりひき</rt></ruby>を認めることで、<ruby>商工業者<rt>しょうこうぎょうしゃ</rt></ruby>を惹きつけ<ruby>城下町<rt>じょうかまち</rt></ruby>と<ruby>領国経済<rt>りょうこくけいざい</rt></ruby>を<ruby>活性化<rt>かっせいか</rt></ruby>させた<ruby>政策<rt>せいさく</rt></ruby>です。"
+  },
+  {
+    "keywords": ["喧嘩両成敗", "けんかりょうせいばい", "分国法", "ぶんこくほう", "私闘", "しとう"],
+    "title": "<ruby>喧嘩両成敗<rt>けんかりょうせいばい</rt></ruby>",
+    "content": "<ruby>家臣<rt>かしん</rt></ruby>同士の<ruby>私闘<rt>しとう</rt></ruby>や<ruby>武力衝突<rt>ぶりょくしょうとつ</rt></ruby>を<ruby>理由<rt>りゆう</rt></ruby>を問わず<ruby>禁止<rt>きんし</rt></ruby>し、<ruby>大名<rt>だいみょう</rt></ruby>による<ruby>裁定<rt>さいてい</rt></ruby>に従わせることで<ruby>領内治安<rt>りょうないちあん</rt></ruby>と<ruby>統制<rt>とうせい</rt></ruby>を強めた<ruby>規定<rt>きてい</rt></ruby>です。"
+  },
+  {
+    "keywords": ["惣掟", "そうおきて", "規約", "きやく", "惣村", "そうそん"],
+    "title": "<ruby>惣掟<rt>そうおきて</rt></ruby>",
+    "content": "<ruby>惣村<rt>そうそん</rt></ruby>において、<ruby>村<rt>むら</rt></ruby>の<ruby>秩序<rt>ちつじょ</rt></ruby>や<ruby>農作業<rt>のうさぎょう</rt></ruby>・<ruby>用水管理<rt>ようすいかんり</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>するために<ruby>農民<rt>のうみん</rt></ruby>たちが<ruby>自主的<rt>じしゅてき</rt></ruby>に定めた<ruby>規約<rt>きやく</rt></ruby>のことです。"
+  }
+]
   }
 ]
