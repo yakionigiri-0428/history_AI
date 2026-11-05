@@ -2,26 +2,32 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>オリジナル歴史チャット</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オリジナル歴史アシスタント</title>
   <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 10px; }
-    #chat-box { border: 1px solid #ccc; height: 350px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; background: #f9f9f9; }
-    .user { color: #333; text-align: right; margin: 10px 0; }
-    .user span { background: #d1e7dd; padding: 8px 12px; border-radius: 15px; display: inline-block; }
-    .bot { color: #333; text-align: left; margin: 10px 0; }
-    .bot span { background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 15px; display: inline-block; line-height: 1.8; }
-    input[type="text"] { width: 75%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    button { padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    body { font-family: sans-serif; max-width: 650px; margin: 20px auto; padding: 15px; background: #f4f6f8; }
+    h2 { color: #2b5876; text-align: center; }
+    #chat-box { border: 1px solid #ccc; height: 400px; overflow-y: scroll; padding: 15px; margin-bottom: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .user { text-align: right; margin: 10px 0; }
+    .user span { background: #d1e7dd; padding: 10px 15px; border-radius: 15px; display: inline-block; text-align: left; }
+    .bot { text-align: left; margin: 10px 0; }
+    .bot span { background: #eef6fc; border: 1px solid #bbeecc; padding: 12px 15px; border-radius: 15px; display: inline-block; line-height: 1.8; }
+    .input-area { display: flex; gap: 10px; }
+    input[type="text"] { flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+    button { padding: 12px 20px; background: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #0056b3; }
     ruby rt { font-size: 0.6em; color: #555; }
   </style>
 </head>
 <body>
 
-  <h2>オリジナル歴史アシスタント</h2>
+  <h2>歴史学習アシスタント</h2>
   <div id="chat-box"></div>
 
-  <input type="text" id="userInput" placeholder="ひらがな・漢字で検索（例：あしかがよしみつ、応仁の乱）" onkeypress="if(event.key === 'Enter') sendMessage()">
-  <button onclick="sendMessage()">送信</button>
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="例：おだのぶなが、天下布武、応仁の乱" onkeypress="if(event.key === 'Enter') sendMessage()">
+    <button onclick="sendMessage()">送信</button>
+  </div>
 
   <script>
     let historyData = [];
@@ -31,10 +37,10 @@
       .then(response => response.json())
       .then(data => {
         historyData = data;
-        addMessage("bot", "歴史データを読み込みました。ひらがな・漢字どちらでも質問できます！");
+        addMessage("bot", "歴史データを読み込みました！ひらがなや漢字でキーワードを入力してください。");
       })
       .catch(err => {
-        addMessage("bot", "エラー：データの読み込みに失敗しました。");
+        addMessage("bot", "エラー：data.jsonの読み込みに失敗しました。ファイル名や配置場所を確認してください。");
       });
 
     function addMessage(sender, text) {
@@ -43,7 +49,6 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    // ひらがな・漢字の表記ゆれに対応した検索処理
     function sendMessage() {
       const inputField = document.getElementById('userInput');
       const userText = inputField.value.trim();
@@ -55,16 +60,8 @@
       let matchedItems = [];
 
       for (const item of historyData) {
-        // キーワード配列のどれかひとつでもユーザーの入力に含まれるか（またはルビタグ内の文字も含めて判定）
         let isMatch = item.keywords.some(keyword => {
-          // ルビタグなどを除外して純粋なテキストを取り出して比較
-          const cleanContent = item.content.replace(/<[^>]+>/g, '');
-          const cleanTitle = item.title.replace(/<[^>]+>/g, '');
-          
-          return userText.includes(keyword) || 
-                 keyword.includes(userText) || 
-                 cleanContent.includes(userText) || 
-                 cleanTitle.includes(userText);
+          return userText.includes(keyword) || keyword.includes(userText);
         });
 
         if (isMatch) {
@@ -80,9 +77,9 @@
           });
           addMessage("bot", replyHTML.trim());
         } else {
-          addMessage("bot", "その歴史情報については、まだ学習していません。<br>（例：「あしかがよしみつ」「おうにんのらん」などひらがなでも検索できます）");
+          addMessage("bot", "その歴史情報については、まだ学習していません。<br>（別のキーワードや、ひらがなで試してみてください）");
         }
-      }, 400);
+      }, 300);
     }
   </script>
 </body>
